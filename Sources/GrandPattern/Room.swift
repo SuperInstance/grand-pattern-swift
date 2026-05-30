@@ -33,7 +33,7 @@ public class Room {
 
         // Create a murmur if energy is high enough
         if vibe.energy > 0.5 {
-            murmur.create(origin: name, payload: vibe.dims, timestamp: tickCount)
+            _ = murmur.create(origin: name, payload: vibe.dims, timestamp: tickCount)
         }
 
         // Process murmur decay
